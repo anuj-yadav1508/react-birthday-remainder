@@ -1,38 +1,78 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+body{
+  background-color: salmon;
+}
+
+.container{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 450px;
+  
+  
+}
+
+.heading{
   color: white;
+  padding-left: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.List-item{
+  display: flex;
+  background-color: seashell;
+  margin-bottom: 10px;
+  box-shadow: 3px 4px 9px rgba(211, 211, 211, 0.344);
+  border-radius: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.List-item img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.List-item img:hover{
+ width: 200px;
+ height: 200px;
+}
+
+.name-age{
+  margin-left: 50px;
+  color: #242424;
+}
+
+.name-age h3{
+  font-size: large;
+  letter-spacing: .4px;
+}
+
+.name-age h5{
+  color: lightslategray;
+}
+
+.clear-btn{
+  margin-left: 30%;
+  margin-top: 20px;
+  color: red;
+  font-size: 18px;
+  letter-spacing: .3px;
+  width: 200px;
+  border:2px solid red;
+  outline: none;
+  padding:10px 25px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
 }
